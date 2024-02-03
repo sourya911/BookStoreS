@@ -9,7 +9,7 @@ app.use(cors());
 
 app.use(cors(
     {
-        origin:["https://book-store-s-front.vercel.app/"],
+        origin:["https://book-store-s-front.vercel.app"],
         methods:["POST","GET","PUT","PATCH","DELETE"],
         credentials: true
     }
