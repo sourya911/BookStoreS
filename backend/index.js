@@ -15,8 +15,9 @@ app.use(cors(
     
 ));
 
-mongodb+srv://book-store:drishti12345@cluster0.nfnw30m.mongodb.net/?retryWrites=true&w=majority
 app.use(express.json());
+
+mongodb+srv://book-store:drishti12345@cluster0.nfnw30m.mongodb.net/?retryWrites=true&w=majority
 
 app.get('/',(req,res)=>{
     res.send('Hello')
