@@ -40,7 +40,7 @@ const router = createBrowserRouter([
         path: "/book/:id",
         element: <SingleBook />,
         loader: ({ params }) =>
-          fetch(`http://localhost:3000/book/${params.id}`),
+          fetch(`https://book-store-s.vercel.app/${params.id}`),
       },
     ],
   },
@@ -66,7 +66,7 @@ const router = createBrowserRouter([
         path: "/admin/dashboard/edit-books/:id",
         element: <EditBooks />,
         loader: ({ params }) =>
-          fetch(`http://localhost:3000/book/${params.id}`),
+          fetch(`https://book-store-s.vercel.app/${params.id}`),
       },
      
     ],
