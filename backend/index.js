@@ -18,7 +18,16 @@ app.use(cors(
 
 app.use(express.json());
 
-mongoose.connect('mongodb+srv://book-store:drishti12345@cluster0.nfnw30m.mongodb.net/BookInventory?retryWrites=true&w=majority');
+const connectionString = 'mongodb+srv://book-store:drishti12345@cluster0.nfnw30m.mongodb.net/BookInventory?retryWrites=true&w=majority';
+mongoose.connect(connectionString, { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => {
+    console.log('Connected to MongoDB');
+    // Continue with your code here
+  })
+  .catch((error) => {
+    console.error('Error connecting to MongoDB:', error);
+  });
+
 
 app.get('/',(req,res)=>{
     res.json('Hello')
