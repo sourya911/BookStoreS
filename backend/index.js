@@ -17,7 +17,7 @@ app.use(cors(
 
 app.use(express.json());
 
-mongodb+srv://book-store:drishti12345@cluster0.nfnw30m.mongodb.net/BookInventory?retryWrites=true&w=majority
+mongoose.connect('mongodb+srv://book-store:drishti12345@cluster0.nfnw30m.mongodb.net/BookInventory?retryWrites=true&w=majority');
 
 app.get('/',(req,res)=>{
     res.json('Hello')
