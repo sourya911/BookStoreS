@@ -1,5 +1,5 @@
 const express=require('express')
-import mongoose=require('mongoose')
+const mongoose=require('mongoose')
 const app=express()
 
 const cors=require("cors")
