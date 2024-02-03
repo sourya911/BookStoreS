@@ -1,5 +1,6 @@
 const express=require('express')
 const mongoose=require('mongoose')
+mongoose.set('strictQuery', false);
 const app=express()
 
 const cors=require("cors")
