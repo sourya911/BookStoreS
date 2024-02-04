@@ -5,7 +5,7 @@ const ManageBooks = () => {
   const [allBooks, setAllBooks] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/all-books")
+    fetch("https://book-store-s-front.vercel.app/all-books")
       .then((res) => res.json())
       .then((data) => setAllBooks(data));
   });
