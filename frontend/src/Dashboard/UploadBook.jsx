@@ -47,7 +47,7 @@ const UploadBook = () => {
 
     const bookObj = { title, authorname, image_url, category, book_description };
 
-    fetch("http://localhost:3000/upload", {
+    fetch("https://book-store-s-front.vercel.app/upload", {
       method:'POST',
       headers:{
         'Content-type':"application/json",
