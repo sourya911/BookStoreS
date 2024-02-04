@@ -4,7 +4,7 @@ const Shop = () => {
   const [books, setBooks] = useState([]);
 
   useEffect(() => {
-    fetch("https://book-store-s.vercel.app/all-books")
+    fetch("https://book-store-s.vercel.app/books")
       .then((res) => res.json())
       .then((data) => setBooks(data));
   });
