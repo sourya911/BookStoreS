@@ -5,14 +5,14 @@ const ManageBooks = () => {
   const [allBooks, setAllBooks] = useState([]);
 
   useEffect(() => {
-    fetch("https://book-store-s-front.vercel.app/all-books")
+    fetch("https://book-store-s.vercel.app/all-books")
       .then((res) => res.json())
       .then((data) => setAllBooks(data));
   });
 
   const handleDelete=(id)=>{
     console.log(id);
-    fetch(`https://book-store-s-front.vercel.app/book/${id}`,{
+    fetch(`https://book-store-s.vercel.app/book/${id}`,{
       method:"DELETE",
     }).then(res => res.json()).then(data => {
       alert("Book is Deleted SuccessFully");
