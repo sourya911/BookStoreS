@@ -12,7 +12,7 @@ const ManageBooks = () => {
 
   const handleDelete=(id)=>{
     console.log(id);
-    fetch(`http://localhost:3000/book/${id}`,{
+    fetch(`https://book-store-s-front.vercel.app/book/${id}`,{
       method:"DELETE",
     }).then(res => res.json()).then(data => {
       alert("Book is Deleted SuccessFully");
